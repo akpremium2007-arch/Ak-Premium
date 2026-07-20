@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#1877d1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="AK Store">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="AK Store لخدمات الشحن والاشتراكات الرقمية.">
+    <title>AK Store | متجر الشحن والاشتراكات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <a class="logo" href="#home" aria-label="العودة إلى الرئيسية">
+                <img src="5972309290070511051.jpg" alt="شعار AK Store" class="logo-img" width="160" height="160" decoding="async">
+            </a>
+            <nav aria-label="التنقل الرئيسي">
+                <ul class="nav-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#categories">الأقسام</a></li>
+                    <li><a href="#store-info">المعلومات</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="تفعيل الوضع الداكن" aria-pressed="false">
+                <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+                <span class="theme-toggle-text">داكن</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner" id="home" aria-label="إعلان المتجر">
+            <img src="5972309290070511049.jpg" alt="أهلاً بك في AK Store، وجهتك لخدمات الشحن والاشتراكات الرقمية" class="banner-image" width="2048" height="796" fetchpriority="high" decoding="async">
+        </section>
+
+        <section class="categories section-surface" id="categories">
+            <div class="container">
+                <h1 class="section-title">الأقسام المتاحة</h1>
+                <div class="categories-grid">
+                    <button class="category-card" type="button" data-category="ai" aria-label="عرض منتجات الذكاء الاصطناعي">
+                        <img src="ai.jpg" alt="قسم الذكاء الاصطناعي" class="category-image" width="1600" height="1600" decoding="async">
+                        <span class="category-overlay">الذكاء الاصطناعي</span>
+                    </button>
+                    <button class="category-card" type="button" data-category="charging" aria-label="عرض منتجات التصميم والتعديل">
+                        <img src="desinger.jpg" alt="قسم التصميم والتعديل" class="category-image" width="1600" height="1600" decoding="async">
+                        <span class="category-overlay">التصميم والتعديل</span>
+                    </button>
+                    <button class="category-card" type="button" data-category="accessories" aria-label="عرض اشتراكات الأفلام والأغاني">
+                        <img src="flm.jpg" alt="قسم الأفلام والأغاني" class="category-image" width="1600" height="1600" decoding="async">
+                        <span class="category-overlay">الأفلام والأغاني</span>
+                    </button>
+                    <button class="category-card" type="button" data-category="subscriptions" aria-label="عرض خدمات الشحن">
+                        <img src="play.jpg" alt="قسم شحن الألعاب" class="category-image" width="1600" height="1600" decoding="async">
+                        <span class="category-overlay">الشحن</span>
+                    </button>
+                    <button class="category-card" type="button" data-category="games" aria-label="عرض منتجات البلس">
+                        <img src="plus.jpg" alt="قسم البلس" class="category-image" width="1600" height="1600" decoding="async">
+                        <span class="category-overlay">البلس</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products section-surface" id="products-section" hidden aria-labelledby="category-title">
+            <div class="container">
+                <div class="products-header">
+                    <h2 id="category-title" class="section-title">المنتجات</h2>
+                    <button class="back-btn" id="back-to-home" type="button">العودة إلى الأقسام</button>
+                </div>
+                <div class="products-grid" id="products-grid"></div>
+            </div>
+        </section>
+
+        <section class="store-info section-surface" id="store-info" aria-label="سياسة المتجر والتواصل">
+            <div class="container">
+                <div class="info-grid">
+                    <article class="info-card policy-card">
+                        <span class="info-icon" aria-hidden="true">↻</span>
+                        <h2>سياسة التبديل والاستبدال</h2>
+                        <p>إذا واجهت مشكلة في الطلب، تواصل معنا خلال 24 ساعة من الاستلام وسنراجع الطلب ونساعدك بالحل المناسب.</p>
+                        <a class="text-link" href="https://wa.me/962780547443?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A8%D8%AF%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84." target="_blank" rel="noopener noreferrer">استفسر عبر واتساب</a>
+                    </article>
+                    <article class="info-card social-card">
+                        <span class="info-icon" aria-hidden="true">✦</span>
+                        <h2>واجهة التواصل</h2>
+                        <p>تابعنا أو تواصل معنا مباشرة للحصول على المساعدة وأحدث العروض.</p>
+                        <div class="social-links">
+                            <a class="social-link whatsapp-link" href="https://wa.me/962780547443" target="_blank" rel="noopener noreferrer" aria-label="التواصل عبر واتساب">
+                                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3.2a12.7 12.7 0 0 0-10.9 19.2L3.5 28.8l6.6-1.7A12.8 12.8 0 1 0 16 3.2Zm0 22.9a10.1 10.1 0 0 1-5.1-1.4l-.4-.2-3.9 1 1-3.8-.2-.4A10.2 10.2 0 1 1 16 26.1Zm5.6-7.6c-.3-.1-1.8-.9-2.1-1s-.5-.1-.8.2c-.2.3-.9 1-.9 1.2s-.3.2-.6.1a8.3 8.3 0 0 1-2.5-1.5 9.4 9.4 0 0 1-1.8-2.2c-.2-.3 0-.4.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-1-2.2c-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.6.1-.9.4s-1.2 1.2-1.2 2.9 1.2 3.3 1.4 3.5c.2.2 2.3 3.6 5.6 5 3.3 1.4 3.3.9 3.9.9.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4Z"/></svg>
+                                <span>واتساب</span>
+                            </a>
+                            <a class="social-link instagram-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="فتح حساب إنستغرام">
+                                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M21.9 3H10.1A7.1 7.1 0 0 0 3 10.1v11.8A7.1 7.1 0 0 0 10.1 29h11.8a7.1 7.1 0 0 0 7.1-7.1V10.1A7.1 7.1 0 0 0 21.9 3Zm4.8 18.9a4.8 4.8 0 0 1-4.8 4.8H10.1a4.8 4.8 0 0 1-4.8-4.8V10.1a4.8 4.8 0 0 1 4.8-4.8h11.8a4.8 4.8 0 0 1 4.8 4.8v11.8ZM16 9a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm0 11.7a4.7 4.7 0 1 1 0-9.4 4.7 4.7 0 0 1 0 9.4Zm7.3-12.9a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4Z"/></svg>
+                                <span>إنستغرام</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container watermark">© <span id="current-year">2026</span> AK Store · تطوير الموقع: أحمد خالد</div>
+    </footer>
+    <div class="toast" id="toast" aria-live="polite" role="status"></div>
+    <noscript><p class="noscript-message">يحتاج المتجر إلى تفعيل JavaScript لعرض المنتجات.</p></noscript>
+    <script src="script.js" defer></script>
+</body>
+</html>
